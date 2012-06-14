@@ -1,0 +1,27 @@
+<h1>Listing all articles</h1>
+<table>
+<%if !@articles.empty? %>
+	  <tr>
+	    <th>Title</th>
+	    <th>Description</th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+
+	<% @articles.each do |article| %>
+	  <tr>
+	    <td><%= article.title %></td>
+	    
+	    <td><%=h truncate(article.description, :length => 15) %>
+	   		<%if article.description.length >= 15 %>
+	  	   <%= link_to "more", article %></td>	
+	   <%end%>
+	  </tr>
+	<% end %>
+	<%else%>
+	   no articels are created
+	<%end%>
+</table>
+
+
