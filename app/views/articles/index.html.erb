@@ -23,5 +23,8 @@
 	   no articels are created
 	<%end%>
 </table>
-
+<% if user_signed_in? %>
+<%= link_to "create new article", new_article_path %>
+  <% else %>
+<% end %>
 
