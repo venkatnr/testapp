@@ -1,30 +1,26 @@
-<h1>Listing all articles</h1>
-<table>
-<%if !@articles.empty? %>
-	  <tr>
-	    <th>Title</th>
-	    <th>Description</th>
-	    <th></th>
-	    <th></th>
-	    <th></th>
-	  </tr>
+  <% if user_signed_in? %>
+		<% @articles.each do |article| %>
+				 <% if article.user_id  == current_user.id %>
+					<%= article.title %>	
+					<%=h truncate(article.description, :length => 15) %>
+						<%if article.description.length >= 15 %>
+							<%= link_to "more", article %>
+					   <%end%>		
+				 <%end%>
+				 </br>
+		<%end%>
+	<br>	<%= link_to "create new article", new_article_path %>
 
-	<% @articles.each do |article| %>
-	  <tr>
-	    <td><%= article.title %></td>
-	    
-	    <td><%=h truncate(article.description, :length => 15) %>
-	   		<%if article.description.length >= 15 %>
-	  	   <%= link_to "more", article %></td>	
-	   <%end%>
-	  </tr>
-	<% end %>
-	<%else%>
-	   no articels are created
-	<%end%>
-</table>
-<% if user_signed_in? %>
-<%= link_to "create new article", new_article_path %>
-  <% else %>
-<% end %>
+  <%else%>
+  <u>ALL LIST OF ARTICLS</u></br>
+		<% @articles.each do |article| %>
+					<%= article.title %>	
+					<%=h truncate(article.description, :length => 15) %>
+						<%if article.description.length >= 15 %>
+							<%= link_to "more", article %>
+					   <%end%>	
+				 </br>
+		<%end%>
+  <%end%>
+
 

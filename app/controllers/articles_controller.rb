@@ -42,7 +42,8 @@ before_filter :authenticate_user!, :except => [:index]
   # POST /articles
   # POST /articles.json
   def create
-    @article = Article.new(params[:article])
+    @user = current_user
+    @article = @user.articles.create(params[:article])
 
     respond_to do |format|
       if @article.save
