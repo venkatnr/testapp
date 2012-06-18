@@ -10,6 +10,12 @@
   <%= @article.description %>
 </p>
 
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
+<%if current_user.id == @article.user_id%>
+    <% @article.comments.each do |comment| %>
+		<%= comment.name%><br>
+		<%= comment.commentonarticle %>
+    <%end%>
+	Edit: <%= link_to 'Edit', edit_article_path(@article) %> 
+	Comment: <%= link_to "comment", :controller => :comments, :action => :new, :id => @article.id  %>
+<%end%>
 <%= link_to 'Back', articles_path %>

@@ -6,7 +6,8 @@
 					 <td><%=h truncate(article.description, :length => 15) %>
 						<%if article.description.length >= 15 %>
 							<%= link_to "more", article %>
-					   <%end%></td>	</tr>	
+					   <%end%></td>
+						<td> Comment: <%= link_to "comment", :controller => :comments, :action => :new, :id => article.id  %></td>	</tr>
 				 <%end%>
 		<%end%>
 		</table>

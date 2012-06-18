@@ -8,7 +8,7 @@ development:
   encoding: utf8
   database: task1
   username: root
-  password: pass
+  password: tiger
   host: localhost
   port: 3306
   pool: 5

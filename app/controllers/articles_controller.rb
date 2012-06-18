@@ -15,6 +15,7 @@ before_filter :authenticate_user!, :except => [:index]
   # GET /articles/1
   # GET /articles/1.json
   def show
+    @comment = Comment.find(params[:id])
     @article = Article.find(params[:id])
 
     respond_to do |format|
