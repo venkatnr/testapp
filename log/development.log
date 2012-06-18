@@ -19309,3 +19309,698 @@ Served asset /comments.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:09:20 +0530 2012
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at Mon Jun 18 18:12:39 +0530 2012
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jun 18 18:12:39 +0530 2012
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:12:39 +0530 2012
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:12:39 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:12:39 +0530 2012
+Served asset /comments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:12:39 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:39 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:39 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:39 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:39 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:39 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at Mon Jun 18 18:12:45 +0530 2012
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jun 18 18:12:45 +0530 2012
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:12:45 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:12:45 +0530 2012
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:12:45 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:45 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:12:45 +0530 2012
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:45 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:45 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:45 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:45 +0530 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Mon Jun 18 18:12:48 +0530 2012
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"oVMUTaOg/kdvvrdDQFnqZTRZ5nrXaAhHeKMj5YXEhE8=", "utf8"=>"✓", "commit"=>"Sign in", "user"=>{"password"=>"[FILTERED]", "email"=>"admin@mail.com", "remember_me"=>"0"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@mail.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2012-06-18 12:38:40', `current_sign_in_at` = '2012-06-18 12:42:48', `updated_at` = '2012-06-18 12:42:48', `sign_in_count` = 18 WHERE `users`.`id` = 1[0m
+  [1m[35m (75.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 208ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at Mon Jun 18 18:12:48 +0530 2012
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`id` = ? LIMIT 1  [["id", "3"]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mComment Load (0.5ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 3
+  Rendered articles/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 62ms (Views: 56.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:12:48 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:12:48 +0530 2012
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:12:48 +0530 2012
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:48 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:12:48 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:48 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:48 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:48 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:12:48 +0530 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at Mon Jun 18 18:13:50 +0530 2012
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oVMUTaOg/kdvvrdDQFnqZTRZ5nrXaAhHeKMj5YXEhE8="}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE `users` SET `remember_created_at` = NULL, `updated_at` = '2012-06-18 12:43:50' WHERE `users`.`id` = 1[0m
+  [1m[35m (86.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 93ms (ActiveRecord: 88.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 18 18:13:50 +0530 2012
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT `articles`.* FROM `articles` [0m
+  Rendered articles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:13:50 +0530 2012
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:13:50 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:13:50 +0530 2012
+Served asset /comments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:13:50 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:13:50 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:13:50 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:13:50 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:13:50 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:13:50 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jun 18 18:13:51 +0530 2012
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:13:51 +0530 2012
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:13:51 +0530 2012
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:13:51 +0530 2012
+Served asset /articles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:13:51 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:13:51 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:13:51 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:13:51 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:13:51 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:13:51 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Mon Jun 18 18:14:05 +0530 2012
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"D8K6nkCF1dEjLf2euTN9Owj9I3geFZDWMGdzj3tmkWo=", "utf8"=>"✓", "commit"=>"Sign in", "user"=>{"password"=>"[FILTERED]", "email"=>"first@gmail.com", "remember_me"=>"1"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'first@gmail.com' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (33.3ms)[0m  UPDATE `users` SET `remember_created_at` = '2012-06-18 12:44:05', `updated_at` = '2012-06-18 12:44:05' WHERE `users`.`id` = 2
+  [1m[36m (43.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2012-06-18 09:41:57', `current_sign_in_at` = '2012-06-18 12:44:05', `updated_at` = '2012-06-18 12:44:05', `sign_in_count` = 6 WHERE `users`.`id` = 2[0m
+  [1m[35m (52.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 267ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 18 18:14:05 +0530 2012
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT `articles`.* FROM `articles` [0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  Rendered articles/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 28ms (Views: 22.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:14:05 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:14:05 +0530 2012
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:14:05 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:05 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:14:05 +0530 2012
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:05 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:05 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:05 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:05 +0530 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/comments/new?id=4" for 127.0.0.1 at Mon Jun 18 18:14:09 +0530 2012
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered comments/new.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:14:09 +0530 2012
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:14:09 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:14:09 +0530 2012
+Served asset /comments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:14:09 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:09 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:09 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:09 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:09 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:09 +0530 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at Mon Jun 18 18:14:12 +0530 2012
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.8ms)[0m  [1mSELECT `comments`.* FROM `comments` [0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1
+  Rendered comments/index.html.erb within layouts/application (27.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 41ms (Views: 34.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:14:12 +0530 2012
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:14:12 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:14:13 +0530 2012
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:14:13 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:13 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:13 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:13 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:13 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:14:13 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/comments/new?id=4" for 127.0.0.1 at Mon Jun 18 18:15:25 +0530 2012
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = ? LIMIT 1  [["id", "4"]]
+  Rendered comments/new.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 17ms (Views: 11.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:25 +0530 2012
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:25 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:25 +0530 2012
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:25 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:25 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:25 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:25 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:25 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:25 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Jun 18 18:15:27 +0530 2012
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles` 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:27 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:27 +0530 2012
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:27 +0530 2012
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:27 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:27 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:27 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:27 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:27 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:27 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/comments/new?id=2" for 127.0.0.1 at Mon Jun 18 18:15:29 +0530 2012
+Processing by CommentsController#new as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles` WHERE `articles`.`id` = ? LIMIT 1  [["id", "2"]]
+  Rendered comments/new.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:29 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:29 +0530 2012
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:29 +0530 2012
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:29 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:29 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:29 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:29 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:29 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:29 +0530 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at Mon Jun 18 18:15:34 +0530 2012
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  Rendered articles/_form.html.erb (1.8ms)
+  Rendered articles/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:34 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:34 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:34 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:34 +0530 2012
+Served asset /comments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:34 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:34 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:34 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:34 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:34 +0530 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Jun 18 18:15:37 +0530 2012
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT `articles`.* FROM `articles` [0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  Rendered articles/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:37 +0530 2012
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:37 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:37 +0530 2012
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:37 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:37 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:37 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:37 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:37 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:37 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at Mon Jun 18 18:15:42 +0530 2012
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"D8K6nkCF1dEjLf2euTN9Owj9I3geFZDWMGdzj3tmkWo="}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE `users` SET `remember_created_at` = NULL, `updated_at` = '2012-06-18 12:45:42' WHERE `users`.`id` = 2[0m
+  [1m[35m (60.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 71ms (ActiveRecord: 62.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jun 18 18:15:42 +0530 2012
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT `articles`.* FROM `articles` [0m
+  Rendered articles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:42 +0530 2012
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:42 +0530 2012
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:42 +0530 2012
+Served asset /comments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jun 18 18:15:42 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:42 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:42 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:42 +0530 2012
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:42 +0530 2012
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jun 18 18:15:42 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
