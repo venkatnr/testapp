@@ -1,26 +1,31 @@
   <% if user_signed_in? %>
-		<% @articles.each do |article| %>
+  <table border = 1><tr><th>name of article</th><th>description</th></tr>
+		<% @articles.each do |article| %>		
 				 <% if article.user_id  == current_user.id %>
-					<%= article.title %>	
-					<%=h truncate(article.description, :length => 15) %>
+					 <tr><td><%= article.title %></td>	
+					 <td><%=h truncate(article.description, :length => 15) %>
 						<%if article.description.length >= 15 %>
 							<%= link_to "more", article %>
-					   <%end%>		
+					   <%end%></td>	</tr>	
 				 <%end%>
-				 </br>
 		<%end%>
+		</table>
 	<br>	<%= link_to "create new article", new_article_path %>
 
   <%else%>
   <u>ALL LIST OF ARTICLS</u></br>
+		<table border = 1><tr><th>article id</th><th>name of article</th><th>description</th></tr>
 		<% @articles.each do |article| %>
-					<%= article.title %>	
-					<%=h truncate(article.description, :length => 15) %>
+					<tr>
+					<td><%= article.id %></td>
+					<td><%= article.title %></td>	
+					<td><%=h truncate(article.description, :length => 15) %>
 						<%if article.description.length >= 15 %>
 							<%= link_to "more", article %>
-					   <%end%>	
-				 </br>
+					   <%end%></td>	
+				 	</tr>
 		<%end%>
+		</table>
   <%end%>
 
 
