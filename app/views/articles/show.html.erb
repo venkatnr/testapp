@@ -9,13 +9,15 @@
   <b>Description:</b>
   <%= @article.description %>
 </p>
-
-<%if current_user.id == @article.user_id%>
-    <% @article.comments.each do |comment| %>
+ <% @article.comments.each do |comment| %>
 		<%= comment.name%><br>
-		<%= comment.commentonarticle %>
+		<%= comment.commentonarticle %><hr>
     <%end%>
-	Edit: <%= link_to 'Edit', edit_article_path(@article) %> 
-	Comment: <%= link_to "comment", :controller => :comments, :action => :new, :id => @article.id  %>
+<%if current_user.id == @article.user_id%>
+   
+ <%= link_to 'Edit', edit_article_path(@article) %> 
+	
 <%end%>
+Comment: <%= link_to "comment", :controller => :comments, :action => :new, :id => @article.id  %>
+
 <%= link_to 'Back', articles_path %>

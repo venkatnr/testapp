@@ -1,4 +1,6 @@
-Title: <%= @article.title %>  (<%= link_to "back to create new article", new_article_path  %>)<br>
+(<%= link_to "back to create new article", new_article_path  %>)<br>
+(<%=link_to "back to all comments for this article", article_path(:id => @article.id)%>)<br>
+Title: <%= @article.title %>
 Description: <%= @article.description %>
 <%= form_for @comment, :url => {:action => :create, :id => @article.id} do |f| %>
   <div class="field">
