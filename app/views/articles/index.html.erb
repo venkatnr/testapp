@@ -1,5 +1,7 @@
+ 
   <% if user_signed_in? %>
   <table border = 1><tr><th>name of article</th><th>description</th></tr>
+		
 		<% @articles.each do |article| %>		
 				 <% if article.user_id  == current_user.id %>
 					 <tr><td><%= article.title %></td>	
@@ -10,10 +12,12 @@
 						<td> Comment: <%= link_to "comment", :controller => :comments, :action => :new, :id => article.id  %></td>	</tr>
 				 <%end%>
 		<%end%>
-		</table>
+		
+		</table><%= paginate @articles %>
 	<br>	<%= link_to "create new article", new_article_path %>
 
   <%else%>
+
   <u>ALL LIST OF ARTICLS</u></br>
 		<table border = 1><tr><th>article id</th><th>name of article</th><th>description</th></tr>
 		<% @articles.each do |article| %>
@@ -27,6 +31,7 @@
 				 	</tr>
 		<%end%>
 		</table>
+		  <%= paginate @articles %>
   <%end%>
 
 

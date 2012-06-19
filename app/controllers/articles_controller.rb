@@ -1,10 +1,14 @@
-
+	
 class ArticlesController < ApplicationController
+
 before_filter :authenticate_user!, :except => [:index]
+
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+  #  @articles = Article.all.Kaminari.paginate_array(my_array_object).page(params[:page]).per(3)
+myarray = Article.all
+@articles = Kaminari.paginate_array(myarray).page(params[:page]).per(5)
 
     respond_to do |format|
       format.html # index.html.erb
